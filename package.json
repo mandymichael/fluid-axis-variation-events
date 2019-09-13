@@ -1,0 +1,23 @@
+{
+  "name": "fluid-variable-font-events",
+  "version": "0.0.0",
+  "description": "A function that helps to create fluid transitions with variable fonts",
+  "main": "fave.js",
+  "scripts": {
+    "verify": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandymichael/fluid-axis-variation-events.git"
+  },
+  "keywords": [
+    "variable",
+    "fonts"
+  ],
+  "author": "Mandy Michael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mandymichael/fluid-axis-variation-events/issues"
+  },
+  "homepage": "https://github.com/mandymichael/fluid-axis-variation-events#readme"
+}

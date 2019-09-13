@@ -1,15 +1,15 @@
 function fluidAxisVariation(minimumAxisValue, maximumAxisValue, minimumEventValue, maximumEventValue, eventValue, axisCustomPropertyName, element) {
 
-	const minAxisValue = minimumAxisValue;
-	const maxAxisValue = maximumAxisValue;
-    const minEventValue = minimumEventValue;
-	const maxEventValue = maximumEventValue;
-	const currentEventValue = eventValue;
+	var minAxisValue = minimumAxisValue;
+	var maxAxisValue = maximumAxisValue;
+    var minEventValue = minimumEventValue;
+	var maxEventValue = maximumEventValue;
+	var currentEventValue = eventValue;
 
-	const eventPercent = (currentEventValue - minEventValue) / (maxEventValue - minEventValue);
-	const fontAxisScale = eventPercent * (minAxisValue - maxAxisValue) + maxAxisValue;
+	var eventPercent = (currentEventValue - minEventValue) / (maxEventValue - minEventValue);
+	var fontAxisScale = eventPercent * (minAxisValue - maxAxisValue) + maxAxisValue;
 
-	const newAxisValue = currentEventValue > maxEventValue
+	var newAxisValue = currentEventValue > maxEventValue
 	   ? minAxisValue
        : currentEventValue < minEventValue
    			? maxAxisValue
@@ -17,3 +17,5 @@ function fluidAxisVariation(minimumAxisValue, maximumAxisValue, minimumEventValu
 
 	element.style.setProperty(axisCustomPropertyName, newAxisValue);
 }
+
+module.exports = {fluidAxisVariation}

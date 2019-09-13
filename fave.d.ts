@@ -1,0 +1,1 @@
+export function fluidAxisVariation(minimumAxisValue:number, maximumAxisValue:number, minimumEventValue:number, maximumEventValue:number, eventValue:number, axisCustomPropertyName:string, element:HTMLElement) : void

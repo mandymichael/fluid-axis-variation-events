@@ -6,6 +6,8 @@ A simple function to use varible font axes with JavaScript events.
 ### Change font weight based on screen width
 
 ```
+import {fluidAxisVariation} from 'fluid-variable-font-events'
+
 // Set a range for the minimum & maximum font axis values
 const minAxisValue = 200;
 const maxAxisValue = 900;
